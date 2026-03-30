@@ -2,7 +2,8 @@ from crewai import Agent, Task, Crew
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "8720081257:AAGpSKdG_K19CN0HLIsWUHBebr9Od-ZrsUc"
+import os
+TOKEN = os.getenv("TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("START command received")
