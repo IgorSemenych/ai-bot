@@ -1,7 +1,5 @@
 --prefer-binary
+openai
+python-telegram-bot==20.7
 crewai==0.28.8
-openai
-python-telegram-bot==20.7crewai
-openai
-python-telegram-bot
 
